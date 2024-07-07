@@ -1,0 +1,21 @@
+<ion-content [fullscreen]="true">
+  <div class="main" #main>
+    <mat-card class="side-card">
+      <div class="body">
+        <div class="headline">
+          <h1>All Notes</h1>
+        </div>
+        <div class="all-notes">
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile (click)="openNote(note, i)" class="mat-title" *ngFor="let note of notes; let i = index">
+              {{note}}
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+        <div class="addButton">
+          <a routerLink="/tabs/dialog"><mat-icon>add</mat-icon></a>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</ion-content>

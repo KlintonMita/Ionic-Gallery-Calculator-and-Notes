@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="main">
+    <div class="btn-delete">
+      <a href="/tabs/tab3">Back</a>
+      <button (click)="removeNote()">Delete</button>
+    </div>
+    <div class="main-header">
+      <h1>Edit Note</h1>
+    </div>
+    <div class="main-form">
+      <form [formGroup]="noteForm" (ngSubmit)="saveNote()">
+        <mat-form-field class="mat-form-field">
+          <div class="text-area-class">
+            <textarea matInput placeholder="Note" formControlName="note"></textarea>
+          </div>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="!noteForm.valid" type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+</ion-content>

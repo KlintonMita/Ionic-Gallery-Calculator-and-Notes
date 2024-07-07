@@ -1,0 +1,90 @@
+.btn-delete {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    color: white;
+    text-decoration: unset;
+    background-color: #0056eb;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+
+  button {
+    color: white;
+    text-decoration: unset;
+    background-color: #0056eb;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+}
+
+.main {
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+
+.main-header {
+  padding: 16px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.main-form {
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+
+    button {
+        background-color: #0056eb;
+        color: white;
+    }
+
+    .mat-form-field {
+      width: 100%;
+      display: flex;
+
+      .text-area-class {
+        height: 250px;
+      }
+
+      textarea {
+        height: 100%;
+      }
+    }
+  }
+}

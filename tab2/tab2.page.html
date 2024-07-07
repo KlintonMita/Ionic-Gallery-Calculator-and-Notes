@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="main">
+    <div class="btn-capture">
+      <ion-button (click)="captureImage()">
+        +
+      </ion-button>
+    </div>
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile (click)="imgClick(image)" *ngFor="let image of clickedImages">
+        <img [src]="image" />
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="overlay" *ngIf="selectedImage">
+    <div class="overlay-content">
+      <div class="btn-class">
+        <button (click)="deleteImg(selectedImage)" mat-fab class="btn-menu" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button class="clickImage" (click)="closeOverlay()">Close</button>
+      </div>
+      <img [src]="selectedImage" class="full-width-img" />
+    </div>
+  </div>
+</ion-content>

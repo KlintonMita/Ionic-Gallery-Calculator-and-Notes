@@ -1,0 +1,53 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.headline {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.addButton {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.addButton a {
+  width: 50px;
+  background-color: #0054e9;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 3px 7px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.addButton mat-icon {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.mat-title {
+  background-color: #474747;
+  color: white;
+}

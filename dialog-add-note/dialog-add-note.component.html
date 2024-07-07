@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+    <div class="main">
+        <h1>Add Note</h1>
+      <form [formGroup]="noteForm" class="form-main" (ngSubmit)="onSubmit()">
+        <mat-form-field class="mat-full-width">
+          <textarea class="textarea" matInput formControlName="note" rows="13"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Add Note</button>
+      </form>
+    </div>
+  </ion-content>

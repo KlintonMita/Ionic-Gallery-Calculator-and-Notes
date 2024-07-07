@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <div class="main-calculator">
+    <div class="sum-calculator">
+      <p>{{ display }}</p>
+    </div>
+    <div class="btn-calculator">
+      <div class="first-row">
+        <button class="btn-c" mat-fab (click)="onClearClick()">C</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('(')">( )</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('%')">%</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('/')">/</button>
+      </div>
+      <div class="second-row">
+        <button mat-fab (click)="onNumberClick('7')">7</button>
+        <button mat-fab (click)="onNumberClick('8')">8</button>
+        <button mat-fab (click)="onNumberClick('9')">9</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('*')">x</button>
+      </div>
+      <div class="third-row">
+        <button mat-fab (click)="onNumberClick('4')">4</button>
+        <button mat-fab (click)="onNumberClick('5')">5</button>
+        <button mat-fab (click)="onNumberClick('6')">6</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('-')">-</button>
+      </div>
+      <div class="fourth-row">
+        <button mat-fab (click)="onNumberClick('1')">1</button>
+        <button mat-fab (click)="onNumberClick('2')">2</button>
+        <button mat-fab (click)="onNumberClick('3')">3</button>
+        <button class="btn-green" mat-fab (click)="onOperatorClick('+')">+</button>
+      </div>
+      <div class="fifth-row">
+        <button mat-fab (click)="onOperatorClick('+/-')">+/-</button>
+        <button mat-fab (click)="onNumberClick('0')">0</button>
+        <button mat-fab (click)="onNumberClick('.')">.</button>
+        <button class="btn-equal" mat-fab (click)="onEqualsClick()">=</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
